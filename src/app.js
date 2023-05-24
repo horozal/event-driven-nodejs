@@ -1,6 +1,5 @@
-const http = require('http');
+const Publisher = require('components/publisher');
 
-http.createServer(function (req, res) {
-  res.write('Hello World!');
-  res.end(); //end the response
-}).listen(8080);
+const publisher = new Publisher;
+
+publisher.publish({ title: 'Event-Driven Architecture Template' });
