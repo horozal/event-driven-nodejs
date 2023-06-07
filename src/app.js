@@ -1,5 +1,5 @@
-const Publisher = require('components/publisher');
+const Publisher = require('./components/publisher'); 
 
-const publisher = new Publisher;
+const publisher = new Publisher();
 
 publisher.publish({ title: 'Event-Driven Architecture Template' });
